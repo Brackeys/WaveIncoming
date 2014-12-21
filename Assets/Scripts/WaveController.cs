@@ -11,95 +11,124 @@ public class WaveController : MonoBehaviour {
 		public float spawnRate;
 	}
 
-	public float timeBetweenWaves = 20f;
-	
-	public Animator textAnim;
+	public float timeBetweenWaves = 5f;
 	
 	private GameObject[] SpawnPoints;
-	
 	public Wave[] Waves;
 	
-	public static float timeUntilWave = 5f;
-	private float lastSecond = 0f;
+	public Animator textAnim;
+	public string animTriggerName = "Go";
 	
-	public bool waveAlive = false;
-	public int nextWave = 0;
+	private bool enemiesAlive = false;
+	private bool spawning = false;
+	private static float _waveCountdown = 0f;
+	public static float waveCountdown {
+		get { return _waveCountdown; }
+		set { _waveCountdown = Mathf.Clamp (value, 0, Mathf.Infinity); }
+	}
 	
-	private int multiplier = 0;
+	public static int waveNumber = 1;
 	
-	private bool doOnce = true;
+	int waveIndex = 0;
+	float multiplier = 1f;
 	
 	void Start () {
 		SpawnPoints = GameObject.FindGameObjectsWithTag ("EnemySpawnPoint");
 		if (SpawnPoints.Length == 0)
 			Debug.LogError ("No enemy spawn points?!");
+		
+		InvokeRepeating ("WaveTracker", 0f, 1f);
+	}
+	
+	void WaveTracker () {
+		if (waveCountdown == 0 && !spawning) {
+			if (GameObject.FindGameObjectsWithTag ("Enemy").Length == 0) {
+				enemiesAlive = false;
+				waveCountdown = timeBetweenWaves;
+			}	
+		}
 	}
 	
 	void Update () {
-		if (GameObject.FindGameObjectWithTag ("Enemy") == null) {
-			if (doOnce) {
-				timeUntilWave = timeBetweenWaves;
-				doOnce = false;
-			}
-			waveAlive = false;
+		waveCountdown -= Time.deltaTime;
+		
+		if (waveCountdown == 0 && enemiesAlive == false) {
+			StartCoroutine ( SpawnWave ( Waves[waveIndex] ) );
+			return;
 		}
 	
-		if (!waveAlive) {
-			if (Time.time > lastSecond + 1f) {
-				timeUntilWave -= 1;
-				
-				lastSecond = Time.time;
-			}
-			
-			if (timeUntilWave <= 0 && waveAlive != true) {
-				if (nextWave == 0)
-				{
-					multiplier += 1;
-				}
-			
-				StartCoroutine ( SpawnWave (Waves[nextWave]) );
-				
-				if (nextWave < Waves.Length - 1)
-					nextWave++;
-				else {
-					nextWave = 0;
-				}
-			}
-		}
+//		if (GameObject.FindGameObjectWithTag ("Enemy") == null) {
+//			if (doOnce) {
+//				timeUntilWave = timeBetweenWaves;
+//				doOnce = false;
+//			}
+//			waveAlive = false;
+//		}
+//	
+//		if (!waveAlive) {
+//			if (Time.time > lastSecond + 1f) {
+//				timeUntilWave -= 1;
+//				
+//				lastSecond = Time.time;
+//			}
+//			
+//			if (timeUntilWave <= 0 && waveAlive != true) {
+//				if (nextWave == 0)
+//				{
+//					multiplier += 1;
+//				}
+//			
+//				StartCoroutine ( SpawnWave (Waves[nextWave]) );
+//				
+//				if (nextWave < Waves.Length - 1)
+//					nextWave++;
+//				else {
+//					nextWave = 0;
+//				}
+//			}
+//		}
 	}
 	
 	public IEnumerator SpawnWave (Wave wave) {
-		waveAlive = true;
-		doOnce = true;
 	
-		textAnim.SetTrigger ("Go");
+		enemiesAlive = true;
+		spawning = true;
+		
+		if (textAnim != null)
+			textAnim.SetTrigger (animTriggerName);
+		
+		yield return new WaitForSeconds (2f);
 	
-		int spawnIndex = Random.Range (0, SpawnPoints.Length);
-		int j = 0;
 		for (int i = 0; i < wave.count; i++) {
+			int spawnIndex = Random.Range (0, SpawnPoints.Length);
 			Transform enemy = Instantiate (wave.enemy, SpawnPoints[spawnIndex].transform.position, SpawnPoints[spawnIndex].transform.rotation) as Transform;
 			MultiplyStats (enemy);
 			yield return new WaitForSeconds (1f/wave.spawnRate);
-			
-			if (j == 1) {
-				j = 0;
-				spawnIndex = Random.Range (0, SpawnPoints.Length);
-			}
-			else {
-				j++;
-			}
 		}
+		
+		waveNumber += 1;
+		
+		if (waveIndex < Waves.Length)
+			waveIndex++;
+		else {
+			waveIndex = 0;
+			multiplier *= 2f;
+		}
+
+		spawning = false;
 	}
 	
+	// Delete this method if you are implementing this script into your own game
+	// It's way too specific
 	public void MultiplyStats (Transform enemy) {
-		enemy.GetComponent<EnemyAI>().speed *= multiplier/3f;
+		enemy.GetComponent<EnemyAI>().speed += enemy.GetComponent<EnemyAI>().speed * multiplier/10f;
 		EnemyMaster em = enemy.GetComponent<EnemyMaster>();
-		em.health *= multiplier;
-		em.moneyReward *= multiplier;
+		em.health = (int)(em.health * multiplier);
+		em.moneyReward = (int) (em.moneyReward * multiplier);
 		EnemyMelee melee = enemy.GetComponent<EnemyMelee>();
 		if (melee != null) {
-			melee.damage *= (int)(multiplier * 2f);
-			melee.hitRate *= (int)(multiplier * 2f);
+			melee.damage = (int)(melee.damage * multiplier);
+			melee.hitRate = (multiplier);
 		}
 	}
 }

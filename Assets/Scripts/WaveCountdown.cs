@@ -12,7 +12,7 @@ public class WaveCountdown : MonoBehaviour {
 	}
 
 	void Update () {
-		countdown.text = ( Mathf.Round (WaveController.timeUntilWave) ).ToString();
+		countdown.text = ( Mathf.Round (WaveController.waveCountdown) ).ToString();
 	}
 	
 }

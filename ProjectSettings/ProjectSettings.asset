@@ -45,7 +45,7 @@ PlayerSettings:
   usePlayerLog: 1
   stripPhysics: 0
   forceSingleInstance: 0
-  resizableWindow: 1
+  resizableWindow: 0
   useMacAppStoreValidation: 0
   gpuSkinning: 0
   xboxPIXTextureCapture: 0
@@ -111,10 +111,12 @@ PlayerSettings:
     m_Icons:
     - m_Icon: {fileID: 2800000, guid: d7823d6866545094d8450d79f3dcff14, type: 3}
       m_Size: 128
-  m_BuildTargetBatching: []
+  m_BuildTargetBatching:
+  - m_BuildTarget: Standalone
+    m_StaticBatching: 1
+    m_DynamicBatching: 1
   webPlayerTemplate: APPLICATION:Default
   m_TemplateCustomTags: {}
-  locationUsageDescription: 
   XboxTitleId: 
   XboxImageXexPath: 
   XboxSpaPath: 
