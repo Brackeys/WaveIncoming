@@ -11,10 +11,8 @@ Coming soon! http://brackeys.com/waveincoming/
 
 
 ###Source Walkthrough
-========
 Coming soon! http://youtube.com/brackeys/
 
 ###Developers
-========
 * Asbjørn Thirslund - Programmer, Unity Engineer
 * Eigil Pock-Steen Jørgensen - Graphics Artist, Sound Engineer
