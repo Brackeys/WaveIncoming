@@ -17,5 +17,5 @@ Coming soon! http://youtube.com/brackeys/
 
 Developers
 ========
-*Asbjørn Thirslund - Programmer, Unity Engineer
-*Eigil Pock-Steen Jørgensen - Graphics Artist, Sound Engineer
+* Asbjørn Thirslund - Programmer, Unity Engineer
+* Eigil Pock-Steen Jørgensen - Graphics Artist, Sound Engineer
