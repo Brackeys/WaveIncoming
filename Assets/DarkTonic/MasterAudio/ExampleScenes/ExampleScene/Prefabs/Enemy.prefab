@@ -1,0 +1,676 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  - 33: {fileID: 3300000}
+  - 23: {fileID: 2300000}
+  - 54: {fileID: 5400000}
+  - 135: {fileID: 13500000}
+  - 114: {fileID: 11400002}
+  m_Layer: 0
+  m_Name: Enemy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106829}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: .12963289, y: .12963289, z: .12963289}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!23 &2300000
+Renderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 9fe03559e21299e43ba2acaa77a68c8c, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &3300000
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &5400000
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdb3ce1e3b532e64bbbc6537747a6004, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ExplosionParticlePrefab: {fileID: 100000, guid: 3d2dd66e0a3f6974084ea1eafa64a1d0,
+    type: 2}
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0b8ae66d440b4b36a6a08ee6cdbbea4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showGizmo: 1
+  soundSpawnMode: 2
+  disableSounds: 0
+  hideUnused: 0
+  showPoolManager: 0
+  logMissingEvents: 1
+  startSound:
+    soundType: 
+    allPlaylistControllersForGroupCmd: 0
+    allSoundTypesForGroupCmd: 0
+    allSoundTypesForBusCmd: 0
+    volume: 1
+    useFixedPitch: 0
+    pitch: 1
+    emitParticles: 0
+    particleCountToEmit: 1
+    useLayerFilter: 0
+    useTagFilter: 0
+    delaySound: 0
+    matchingLayers: 00000000
+    matchingTags:
+    - Default
+    currentSoundFunctionType: 0
+    currentPlaylistCommand: 0
+    currentSoundGroupCommand: 0
+    currentBusCommand: 0
+    currentCustomEventCommand: 0
+    busName: 
+    playlistName: 
+    playlistControllerName: 
+    startPlaylist: 1
+    fadeVolume: 0
+    fadeTime: 1
+    clipName: '[None]'
+    variationType: 1
+    variationName: 
+    customSoundActive: 0
+    isCustomEvent: 0
+    customEventName: 
+  visibleSound:
+    soundType: Blast
+    allPlaylistControllersForGroupCmd: 0
+    allSoundTypesForGroupCmd: 0
+    allSoundTypesForBusCmd: 0
+    volume: 1
+    useFixedPitch: 0
+    pitch: 1
+    emitParticles: 0
+    particleCountToEmit: 1
+    useLayerFilter: 0
+    useTagFilter: 0
+    delaySound: 0
+    matchingLayers: 00000000
+    matchingTags:
+    - Default
+    currentSoundFunctionType: 0
+    currentPlaylistCommand: 0
+    currentSoundGroupCommand: 0
+    currentBusCommand: 0
+    currentCustomEventCommand: 0
+    busName: 
+    playlistName: 
+    playlistControllerName: 
+    startPlaylist: 1
+    fadeVolume: 0
+    fadeTime: 1
+    clipName: '[None]'
+    variationType: 1
+    variationName: 
+    customSoundActive: 0
+    isCustomEvent: 0
+    customEventName: 
+  invisibleSound:
+    soundType: Blast
+    allPlaylistControllersForGroupCmd: 0
+    allSoundTypesForGroupCmd: 0
+    allSoundTypesForBusCmd: 0
+    volume: 1
+    useFixedPitch: 0
+    pitch: 1
+    emitParticles: 0
+    particleCountToEmit: 1
+    useLayerFilter: 0
+    useTagFilter: 0
+    delaySound: 0
+    matchingLayers: 00000000
+    matchingTags:
+    - Default
+    currentSoundFunctionType: 0
+    currentPlaylistCommand: 3
+    currentSoundGroupCommand: 0
+    currentBusCommand: 0
+    currentCustomEventCommand: 0
+    busName: 
+    playlistName: Two
+    playlistControllerName: 
+    startPlaylist: 1
+    fadeVolume: 0
+    fadeTime: 1.84000003
+    clipName: '[None]'
+    variationType: 1
+    variationName: 
+    customSoundActive: 0
+    isCustomEvent: 0
+    customEventName: 
+  collisionSound:
+    soundType: 
+    allPlaylistControllersForGroupCmd: 0
+    allSoundTypesForGroupCmd: 0
+    allSoundTypesForBusCmd: 0
+    volume: 1
+    useFixedPitch: 0
+    pitch: 1
+    emitParticles: 0
+    particleCountToEmit: 1
+    useLayerFilter: 0
+    useTagFilter: 0
+    delaySound: 0
+    matchingLayers: 00000000
+    matchingTags:
+    - Default
+    currentSoundFunctionType: 0
+    currentPlaylistCommand: 0
+    currentSoundGroupCommand: 0
+    currentBusCommand: 0
+    currentCustomEventCommand: 0
+    busName: 
+    playlistName: 
+    playlistControllerName: 
+    startPlaylist: 1
+    fadeVolume: 0
+    fadeTime: 1
+    clipName: '[None]'
+    variationType: 1
+    variationName: 
+    customSoundActive: 0
+    isCustomEvent: 0
+    customEventName: 
+  triggerSound:
+    soundType: 
+    allPlaylistControllersForGroupCmd: 0
+    allSoundTypesForGroupCmd: 0
+    allSoundTypesForBusCmd: 0
+    volume: 1
+    useFixedPitch: 0
+    pitch: 1
+    emitParticles: 0
+    particleCountToEmit: 1
+    useLayerFilter: 0
+    useTagFilter: 0
+    delaySound: 0
+    matchingLayers: 00000000
+    matchingTags:
+    - Default
+    currentSoundFunctionType: 0
+    currentPlaylistCommand: 0
+    currentSoundGroupCommand: 0
+    currentBusCommand: 0
+    currentCustomEventCommand: 0
+    busName: 
+    playlistName: 
+    playlistControllerName: 
+    startPlaylist: 1
+    fadeVolume: 0
+    fadeTime: 1
+    clipName: '[None]'
+    variationType: 1
+    variationName: 
+    customSoundActive: 0
+    isCustomEvent: 0
+    customEventName: 
+  triggerExitSound:
+    soundType: 
+    allPlaylistControllersForGroupCmd: 0
+    allSoundTypesForGroupCmd: 0
+    allSoundTypesForBusCmd: 0
+    volume: 1
+    useFixedPitch: 0
+    pitch: 1
+    emitParticles: 0
+    particleCountToEmit: 1
+    useLayerFilter: 0
+    useTagFilter: 0
+    delaySound: 0
+    matchingLayers: 00000000
+    matchingTags:
+    - Default
+    currentSoundFunctionType: 0
+    currentPlaylistCommand: 0
+    currentSoundGroupCommand: 0
+    currentBusCommand: 0
+    currentCustomEventCommand: 0
+    busName: 
+    playlistName: 
+    playlistControllerName: 
+    startPlaylist: 1
+    fadeVolume: 0
+    fadeTime: 1
+    clipName: '[None]'
+    variationType: 1
+    variationName: 
+    customSoundActive: 0
+    isCustomEvent: 0
+    customEventName: 
+  mouseEnterSound:
+    soundType: 
+    allPlaylistControllersForGroupCmd: 0
+    allSoundTypesForGroupCmd: 0
+    allSoundTypesForBusCmd: 0
+    volume: 1
+    useFixedPitch: 0
+    pitch: 1
+    emitParticles: 0
+    particleCountToEmit: 1
+    useLayerFilter: 0
+    useTagFilter: 0
+    delaySound: 0
+    matchingLayers: 00000000
+    matchingTags:
+    - Default
+    currentSoundFunctionType: 0
+    currentPlaylistCommand: 0
+    currentSoundGroupCommand: 0
+    currentBusCommand: 0
+    currentCustomEventCommand: 0
+    busName: 
+    playlistName: 
+    playlistControllerName: 
+    startPlaylist: 1
+    fadeVolume: 0
+    fadeTime: 1
+    clipName: '[None]'
+    variationType: 1
+    variationName: 
+    customSoundActive: 0
+    isCustomEvent: 0
+    customEventName: 
+  mouseClickSound:
+    soundType: 
+    allPlaylistControllersForGroupCmd: 0
+    allSoundTypesForGroupCmd: 0
+    allSoundTypesForBusCmd: 0
+    volume: 1
+    useFixedPitch: 0
+    pitch: 1
+    emitParticles: 0
+    particleCountToEmit: 1
+    useLayerFilter: 0
+    useTagFilter: 0
+    delaySound: 0
+    matchingLayers: 00000000
+    matchingTags:
+    - Default
+    currentSoundFunctionType: 0
+    currentPlaylistCommand: 0
+    currentSoundGroupCommand: 0
+    currentBusCommand: 0
+    currentCustomEventCommand: 0
+    busName: 
+    playlistName: 
+    playlistControllerName: 
+    startPlaylist: 1
+    fadeVolume: 0
+    fadeTime: 1
+    clipName: '[None]'
+    variationType: 1
+    variationName: 
+    customSoundActive: 0
+    isCustomEvent: 0
+    customEventName: 
+  spawnedSound:
+    soundType: 
+    allPlaylistControllersForGroupCmd: 0
+    allSoundTypesForGroupCmd: 0
+    allSoundTypesForBusCmd: 0
+    volume: 1
+    useFixedPitch: 0
+    pitch: 1
+    emitParticles: 0
+    particleCountToEmit: 1
+    useLayerFilter: 0
+    useTagFilter: 0
+    delaySound: 0
+    matchingLayers: 00000000
+    matchingTags:
+    - Default
+    currentSoundFunctionType: 0
+    currentPlaylistCommand: 0
+    currentSoundGroupCommand: 0
+    currentBusCommand: 0
+    currentCustomEventCommand: 0
+    busName: 
+    playlistName: 
+    playlistControllerName: 
+    startPlaylist: 1
+    fadeVolume: 0
+    fadeTime: 1
+    clipName: '[None]'
+    variationType: 1
+    variationName: 
+    customSoundActive: 0
+    isCustomEvent: 0
+    customEventName: 
+  despawnedSound:
+    soundType: 
+    allPlaylistControllersForGroupCmd: 0
+    allSoundTypesForGroupCmd: 0
+    allSoundTypesForBusCmd: 0
+    volume: 1
+    useFixedPitch: 0
+    pitch: 1
+    emitParticles: 0
+    particleCountToEmit: 1
+    useLayerFilter: 0
+    useTagFilter: 0
+    delaySound: 0
+    matchingLayers: 00000000
+    matchingTags:
+    - Default
+    currentSoundFunctionType: 0
+    currentPlaylistCommand: 0
+    currentSoundGroupCommand: 0
+    currentBusCommand: 0
+    currentCustomEventCommand: 0
+    busName: 
+    playlistName: 
+    playlistControllerName: 
+    startPlaylist: 1
+    fadeVolume: 0
+    fadeTime: 1
+    clipName: '[None]'
+    variationType: 1
+    variationName: 
+    customSoundActive: 0
+    isCustomEvent: 0
+    customEventName: 
+  enableSound:
+    soundType: 
+    allPlaylistControllersForGroupCmd: 0
+    allSoundTypesForGroupCmd: 0
+    allSoundTypesForBusCmd: 0
+    volume: 1
+    useFixedPitch: 0
+    pitch: 1
+    emitParticles: 0
+    particleCountToEmit: 1
+    useLayerFilter: 0
+    useTagFilter: 0
+    delaySound: 0
+    matchingLayers: 00000000
+    matchingTags:
+    - Default
+    currentSoundFunctionType: 0
+    currentPlaylistCommand: 0
+    currentSoundGroupCommand: 0
+    currentBusCommand: 0
+    currentCustomEventCommand: 0
+    busName: 
+    playlistName: 
+    playlistControllerName: 
+    startPlaylist: 1
+    fadeVolume: 0
+    fadeTime: 1
+    clipName: '[None]'
+    variationType: 1
+    variationName: 
+    customSoundActive: 0
+    isCustomEvent: 0
+    customEventName: 
+  disableSound:
+    soundType: 
+    allPlaylistControllersForGroupCmd: 0
+    allSoundTypesForGroupCmd: 0
+    allSoundTypesForBusCmd: 0
+    volume: 1
+    useFixedPitch: 0
+    pitch: 1
+    emitParticles: 0
+    particleCountToEmit: 1
+    useLayerFilter: 0
+    useTagFilter: 0
+    delaySound: 0
+    matchingLayers: 00000000
+    matchingTags:
+    - Default
+    currentSoundFunctionType: 0
+    currentPlaylistCommand: 0
+    currentSoundGroupCommand: 0
+    currentBusCommand: 0
+    currentCustomEventCommand: 0
+    busName: 
+    playlistName: 
+    playlistControllerName: 
+    startPlaylist: 1
+    fadeVolume: 0
+    fadeTime: 1
+    clipName: '[None]'
+    variationType: 1
+    variationName: 
+    customSoundActive: 0
+    isCustomEvent: 0
+    customEventName: 
+  collision2dSound:
+    soundType: 
+    allPlaylistControllersForGroupCmd: 0
+    allSoundTypesForGroupCmd: 0
+    allSoundTypesForBusCmd: 0
+    volume: 1
+    useFixedPitch: 0
+    pitch: 1
+    emitParticles: 0
+    particleCountToEmit: 1
+    useLayerFilter: 0
+    useTagFilter: 0
+    delaySound: 0
+    matchingLayers: 00000000
+    matchingTags:
+    - Default
+    currentSoundFunctionType: 0
+    currentPlaylistCommand: 0
+    currentSoundGroupCommand: 0
+    currentBusCommand: 0
+    currentCustomEventCommand: 0
+    busName: 
+    playlistName: 
+    playlistControllerName: 
+    startPlaylist: 1
+    fadeVolume: 0
+    fadeTime: 1
+    clipName: '[None]'
+    variationType: 1
+    variationName: 
+    customSoundActive: 0
+    isCustomEvent: 0
+    customEventName: 
+  triggerEnter2dSound:
+    soundType: 
+    allPlaylistControllersForGroupCmd: 0
+    allSoundTypesForGroupCmd: 0
+    allSoundTypesForBusCmd: 0
+    volume: 1
+    useFixedPitch: 0
+    pitch: 1
+    emitParticles: 0
+    particleCountToEmit: 1
+    useLayerFilter: 0
+    useTagFilter: 0
+    delaySound: 0
+    matchingLayers: 00000000
+    matchingTags:
+    - Default
+    currentSoundFunctionType: 0
+    currentPlaylistCommand: 0
+    currentSoundGroupCommand: 0
+    currentBusCommand: 0
+    currentCustomEventCommand: 0
+    busName: 
+    playlistName: 
+    playlistControllerName: 
+    startPlaylist: 1
+    fadeVolume: 0
+    fadeTime: 1
+    clipName: '[None]'
+    variationType: 1
+    variationName: 
+    customSoundActive: 0
+    isCustomEvent: 0
+    customEventName: 
+  triggerExit2dSound:
+    soundType: 
+    allPlaylistControllersForGroupCmd: 0
+    allSoundTypesForGroupCmd: 0
+    allSoundTypesForBusCmd: 0
+    volume: 1
+    useFixedPitch: 0
+    pitch: 1
+    emitParticles: 0
+    particleCountToEmit: 1
+    useLayerFilter: 0
+    useTagFilter: 0
+    delaySound: 0
+    matchingLayers: 00000000
+    matchingTags:
+    - Default
+    currentSoundFunctionType: 0
+    currentPlaylistCommand: 0
+    currentSoundGroupCommand: 0
+    currentBusCommand: 0
+    currentCustomEventCommand: 0
+    busName: 
+    playlistName: 
+    playlistControllerName: 
+    startPlaylist: 1
+    fadeVolume: 0
+    fadeTime: 1
+    clipName: '[None]'
+    variationType: 1
+    variationName: 
+    customSoundActive: 0
+    isCustomEvent: 0
+    customEventName: 
+  particleCollisionSound:
+    soundType: 
+    allPlaylistControllersForGroupCmd: 0
+    allSoundTypesForGroupCmd: 0
+    allSoundTypesForBusCmd: 0
+    volume: 1
+    useFixedPitch: 0
+    pitch: 1
+    emitParticles: 0
+    particleCountToEmit: 1
+    useLayerFilter: 0
+    useTagFilter: 0
+    delaySound: 0
+    matchingLayers: 00000000
+    matchingTags:
+    - Default
+    currentSoundFunctionType: 0
+    currentPlaylistCommand: 0
+    currentSoundGroupCommand: 0
+    currentBusCommand: 0
+    currentCustomEventCommand: 0
+    busName: 
+    playlistName: 
+    playlistControllerName: 
+    startPlaylist: 1
+    fadeVolume: 0
+    fadeTime: 1
+    clipName: '[None]'
+    variationType: 1
+    variationName: 
+    customSoundActive: 0
+    isCustomEvent: 0
+    customEventName: 
+  userDefinedSounds: []
+  useStartSound: 0
+  useVisibleSound: 0
+  useInvisibleSound: 1
+  useCollisionSound: 0
+  useTriggerEnterSound: 0
+  useTriggerExitSound: 0
+  useMouseEnterSound: 0
+  useMouseClickSound: 0
+  useSpawnedSound: 0
+  useDespawnedSound: 0
+  useEnableSound: 0
+  useDisableSound: 0
+  useCollision2dSound: 0
+  useTriggerEnter2dSound: 0
+  useTriggerExit2dSound: 0
+  useParticleCollisionSound: 0
+--- !u!135 &13500000
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1
