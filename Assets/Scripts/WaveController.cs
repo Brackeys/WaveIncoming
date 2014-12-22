@@ -33,6 +33,9 @@ public class WaveController : MonoBehaviour {
 	float multiplier = 1f;
 	
 	void Start () {
+		waveNumber = 1;
+		waveCountdown = 5;
+
 		SpawnPoints = GameObject.FindGameObjectsWithTag ("EnemySpawnPoint");
 		if (SpawnPoints.Length == 0)
 			Debug.LogError ("No enemy spawn points?!");

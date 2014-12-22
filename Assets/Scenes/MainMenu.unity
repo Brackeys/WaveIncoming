@@ -331,7 +331,6 @@ MonoBehaviour:
   m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Priority: 3
   ignoreReversedGraphics: 1
   blockingObjects: 0
   m_BlockingMask:
@@ -677,7 +676,6 @@ MonoBehaviour:
   m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Priority: 3
   ignoreReversedGraphics: 1
   blockingObjects: 0
   m_BlockingMask:
@@ -839,8 +837,8 @@ MonoBehaviour:
     to mess with Dent. Having always been the biggest and the baddest of the bunch,
     joining the military was the right call. Now Dent fights for his life not his
     country, but one things for sure. He doesn't miss taking orders!"
-  sniperDesc: '<b>They say "offer the devil a finger and he takes the hand" have to
-    say I prefer taking heads.</b>
+  sniperDesc: '<b>They say "offer the devil a finger and he takes the hand". Have
+    to say I prefer taking heads.</b>
 
 
     It might be his lack of empathy, or his killcount, but nobody likes being around
