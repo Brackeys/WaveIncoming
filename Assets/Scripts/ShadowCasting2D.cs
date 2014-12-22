@@ -127,7 +127,8 @@ namespace Visibility2D
 				if (intersects[i].v!=null)
 				{
 					verts.Add(transform.InverseTransformPoint((Vector3)intersects[i].v));
-					verts.Add(transform.InverseTransformPoint((Vector3)intersects[(i+1) % intersects.Count].v));
+					if ( intersects[(i+1) % intersects.Count].v != null)
+						verts.Add(transform.InverseTransformPoint((Vector3)intersects[(i+1) % intersects.Count].v));
 					
 					//GLDebug.DrawLine((Vector3)intersects[i].v,(Vector3)intersects[(i+1) % intersects.Count].v,Color.red,0,false);
 				}
