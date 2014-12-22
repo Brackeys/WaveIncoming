@@ -14,8 +14,8 @@ PlayerSettings:
   productName: Wave Incoming
   defaultCursor: {fileID: 2800000, guid: 968f6547a30e6c045bed4fd540f3479d, type: 3}
   cursorHotspot: {x: 15, y: 15}
-  defaultScreenWidth: 500
-  defaultScreenHeight: 500
+  defaultScreenWidth: 600
+  defaultScreenHeight: 400
   defaultScreenWidthWeb: 960
   defaultScreenHeightWeb: 600
   m_RenderingPath: 1
