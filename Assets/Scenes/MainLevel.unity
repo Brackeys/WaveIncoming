@@ -3451,7 +3451,7 @@ RectTransform:
   - {fileID: 237449103}
   - {fileID: 885910540}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -3740,7 +3740,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 22734cefa1ebd4708a3a96afe4eb03ba, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 22734cefa1ebd4708a3a96afe4eb03ba, type: 2}
       propertyPath: masterAudioVolume
@@ -3950,7 +3950,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
 --- !u!1 &701703326
 GameObject:
   m_ObjectHideFlags: 0
@@ -4319,7 +4319,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 742372942}
   - 108: {fileID: 742372941}
-  - 114: {fileID: 742372943}
   m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
@@ -4376,19 +4375,6 @@ Transform:
   - {fileID: 1234236069}
   m_Father: {fileID: 88322523}
   m_RootOrder: 7
---- !u!114 &742372943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 742372940}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d51a18619330ddd449f54b7e1ca5730d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  min: .100000001
-  max: .400000006
 --- !u!1 &747297346
 GameObject:
   m_ObjectHideFlags: 0
@@ -5792,7 +5778,7 @@ Transform:
   - {fileID: 701703327}
   - {fileID: 902097999}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!114 &902607532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6172,6 +6158,11 @@ GameObject:
   - 124: {fileID: 942666359}
   - 81: {fileID: 942666358}
   - 114: {fileID: 942666364}
+  - 114: {fileID: 942666365}
+  - 114: {fileID: 942666363}
+  - 114: {fileID: 942666366}
+  - 114: {fileID: 942666367}
+  - 114: {fileID: 942666368}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -6228,7 +6219,7 @@ Camera:
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
-  m_HDR: 0
+  m_HDR: 1
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
@@ -6243,7 +6234,30 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 1
+--- !u!114 &942666363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 942666357}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bef3d242a13c447ac90c2d2dc213b1ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 0
+  intensity: 3
+  chromaticAberration: 2
+  axialAberration: .5
+  blur: 0
+  blurSpread: .75
+  luminanceDependency: .25
+  blurDistance: 2.5
+  vignetteShader: {fileID: 4800000, guid: 627943dc7a9a74286b70a4f694a0acd5, type: 3}
+  separableBlurShader: {fileID: 4800000, guid: e97c14fbb5ea04c3a902cc533d7fc5d1, type: 3}
+  chromAberrationShader: {fileID: 4800000, guid: 2b4f29398d9484ccfa9fd220449f5eee,
+    type: 3}
 --- !u!114 &942666364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6260,6 +6274,100 @@ MonoBehaviour:
   lookAheadFactor: 2
   lookAheadReturnSpeed: .5
   lookAheadMoveThreshold: .100000001
+--- !u!114 &942666365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 942666357}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a773099f140e846f7835d27351846623, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweakMode: 0
+  screenBlendMode: 1
+  hdr: 0
+  sepBlurSpread: 2.5
+  quality: 1
+  bloomIntensity: .699999988
+  bloomThreshhold: .5
+  bloomThreshholdColor: {r: 1, g: 1, b: 1, a: 1}
+  bloomBlurIterations: 2
+  hollywoodFlareBlurIterations: 2
+  flareRotation: 0
+  lensflareMode: 1
+  hollyStretchWidth: 2.5
+  lensflareIntensity: 0
+  lensflareThreshhold: .300000012
+  lensFlareSaturation: .75
+  flareColorA: {r: .400000006, g: .400000006, b: .800000012, a: .75}
+  flareColorB: {r: .400000006, g: .800000012, b: .800000012, a: .75}
+  flareColorC: {r: .800000012, g: .400000006, b: .800000012, a: .75}
+  flareColorD: {r: .800000012, g: .400000006, b: 0, a: .75}
+  blurWidth: 1
+  lensFlareVignetteMask: {fileID: 2800000, guid: 95ef4804fe0be4c999ddaa383536cde8,
+    type: 3}
+  lensFlareShader: {fileID: 4800000, guid: 459fe69d2f6d74ddb92f04dbf45a866b, type: 3}
+  screenBlendShader: {fileID: 4800000, guid: 7856cbff0a0ca45c787d5431eb805bb0, type: 3}
+  blurAndFlaresShader: {fileID: 4800000, guid: be6e39cf196f146d5be72fbefb18ed75, type: 3}
+  brightPassFilterShader: {fileID: 4800000, guid: 0aeaa4cb29f5d4e9c8455f04c8575c8c,
+    type: 3}
+--- !u!114 &942666366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 942666357}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da8daaf1d21e474bafa968f8f6c9f1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intensityMultiplier: .25
+  generalIntensity: 1
+  blackIntensity: 3
+  whiteIntensity: 1
+  midGrey: .200000003
+  dx11Grain: 0
+  softness: .5
+  monochrome: 0
+  intensities: {x: .676470578, y: .6920892, z: 1}
+  tiling: {x: 64, y: 64, z: 64}
+  monochromeTiling: 64
+  filterMode: 1
+  noiseTexture: {fileID: 2800000, guid: 7a632f967e8ad42f5bd275898151ab6a, type: 3}
+  noiseShader: {fileID: 4800000, guid: b0249d8c935344451aa4de6db76f0688, type: 3}
+  dx11NoiseShader: {fileID: 4800000, guid: 8b30686bb4322ab42ad5eb50a0210b58, type: 3}
+--- !u!114 &942666367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 942666357}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec92b071d2d424aecb3e46f28eb63174, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  adaptationSpeed: .0500000007
+  limitMinimum: 1
+  limitMaximum: 2
+  shaderLum: {fileID: 4800000, guid: befbb4b9c320b4b18a08ef7afb93b6c9, type: 3}
+  shaderReduce: {fileID: 4800000, guid: 57b33a14b6d5347c5a85c36f6cb3b280, type: 3}
+  shaderAdapt: {fileID: 4800000, guid: 257bc83cbeb544540bd0e558aa9b1383, type: 3}
+  shaderApply: {fileID: 4800000, guid: f4901f25d4e1542589348bbb89563d8e, type: 3}
+--- !u!114 &942666368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 942666357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88e4cb3dd6f8c4985b99765bdf304a20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &950461020
 GameObject:
   m_ObjectHideFlags: 0
@@ -6553,7 +6661,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
 --- !u!1 &978809163
 GameObject:
   m_ObjectHideFlags: 0
@@ -6787,7 +6895,7 @@ MonoBehaviour:
   - name: Beatle02
     enemy: {fileID: 400002, guid: 4a771d6e9ed5b5240a2b2c71115b4fb1, type: 2}
     count: 10
-    spawnRate: 5
+    spawnRate: 1
   - name: Beatle03
     enemy: {fileID: 400002, guid: 0b7391d6ab52f354f8bf1ad1ffc71fad, type: 2}
     count: 4
@@ -6806,6 +6914,8 @@ MonoBehaviour:
     spawnRate: .200000003
   textAnim: {fileID: 885910541}
   animTriggerName: Go
+  enemiesAlive: 0
+  spawning: 0
 --- !u!4 &986511085
 Transform:
   m_ObjectHideFlags: 0
@@ -6820,7 +6930,7 @@ Transform:
   - {fileID: 1017025374}
   - {fileID: 871762254}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!1 &987013395
 GameObject:
   m_ObjectHideFlags: 0
@@ -7165,9 +7275,9 @@ Light:
   m_Enabled: 1
   serializedVersion: 3
   m_Type: 2
-  m_Color: {r: .536764741, g: .693306327, b: 1, a: 1}
-  m_Intensity: .219999999
-  m_Range: 10
+  m_Color: {r: .691176474, g: .795537591, b: 1, a: 1}
+  m_Intensity: .5
+  m_Range: 7.82000017
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -8679,7 +8789,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
 --- !u!114 &1353596651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8693,7 +8803,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   astarData:
     hasBeenReverted: 0
-    data: 504b0304140000080800f7789645c41e1d0a230200003e0400000b0024006772617068302e6a736f6e0a0020000000000001001800eea1d1a9f01dd001e4a1d1a9f01dd001d0a1d1a9f01dd0015d535d8fda3010fc2b959f1314870081b72bdcd14ad7dee968d587aa0f265e88856347b6d3034efcf75b3be12380849299f1eeceacf920db467032fb20ff996c80cc08cd29e47cc252ca818db32ce630e69c53c6211d0fd759424e1161b686c2bd31273499d18808ab2b7046140f6a2bb14a1211a39da795afbd27b3788ad8213047fcc51a052807a6a3efc94615925535f0953842a7a15910d10c79a539b4543248b1969652d8ae9b3bd4dec8aa2ec1008908170c87f3ad70d212c4b67464767be865b3b1e0daa9d961210c7a0bb5c857ed4aac5031bbbbc96844d3d3b9d28f3e155364364657dfba3e34c1aaae14c5ee8d1d0a6611da3069a10f2e6e476cea5e28a3c1749c64b889fc314ef290509c0ca6edc76771f1312fa1c0619c69e03c5e0f6ad43b933bb696f0a704f5532f8d6e14bfb016d245fb72f296f77329aab50f38bbbe3eec850de121b092da07ed170b06f7f11d0d8495db303a627ea8df167eb1adbdd8eee02761ac432238668dd3cf42ed9646f0abf28c2e8475cfa212214d5cbd37b6d68d4125790c2963068d9b6ba3c083ad9d1a1493eef08add5c7fc777cca5df1dfec40aa7db8d744c77b9fbf2005eb47edb42e179265f5b3eb4c4a0d4793085abc6c9bdd72f4bc36a7fc1b861ef4b71acf4d5bd501bbd2a0c807a09873bb862f837db5f6e1ceaff2603da5e863c8f92ee7b77696e2e4c2b381f990c238acf69324df3344893281e77e2517a7d8ee26c4027e930cdf211ea2611fd773a7d02504b0304140000080800f7789645287e18aa4300000048000000120024006772617068305f656469746f722e6a736f6e0a0020000000000001001800260ad2a9f01dd001260ad2a9f01dd001260ad2a9f01dd001ab56cac94fce4e4d51b22a292a4dd5512acec82f77ad28294a54b24a4bcc29068a94a456949416a58665166726e5a4c2d4156496e59728592939a7e695a41629d50200504b0304140000080800f7789645f1107aa57400000083000000090024006d6574612e6a736f6e0a00200000000000010018008e1fd2a9f01dd0018e1fd2a9f01dd001841fd2a9f01dd0011d8c310f82301406ffcb9bb1a1a556c2eac066dc09c333df133ad892524c0cf1bf4bdd6eb8bb9dde92561f0375d4a8b33254d194789957eaf4819bc74103e9564b8b0b1b0d6167ed09e200688618d73c6c4d6345f9b3c88d5ff22fee9ce7a70ff061527df2e8cbb5582142ae710bb968f5f8fd01504b01022d00140000080800f7789645c41e1d0a230200003e0400000b00240000000000000000000000000000006772617068302e6a736f6e0a0020000000000001001800eea1d1a9f01dd001e4a1d1a9f01dd001d0a1d1a9f01dd001504b01022d00140000080800f7789645287e18aa43000000480000001200240000000000000000000000700200006772617068305f656469746f722e6a736f6e0a0020000000000001001800260ad2a9f01dd001260ad2a9f01dd001260ad2a9f01dd001504b01022d00140000080800f7789645f1107aa574000000830000000900240000000000000000000000070300006d6574612e6a736f6e0a00200000000000010018008e1fd2a9f01dd0018e1fd2a9f01dd001841fd2a9f01dd001504b050600000000030003001c010000c60300000000
+    data: 504b030414000008080031889645c41e1d0a230200003e0400000b0024006772617068302e6a736f6e0a00200000000000010018006600bf8f001ed0016600bf8f001ed0016600bf8f001ed0015d535d8fda3010fc2b959f1314870081b72bdcd14ad7dee968d587aa0f265e88856347b6d3034efcf75b3be12380849299f1eeceacf920db467032fb20ff996c80cc08cd29e47cc252ca818db32ce630e69c53c6211d0fd759424e1161b686c2bd31273499d18808ab2b7046140f6a2bb14a1211a39da795afbd27b3788ad8213047fcc51a052807a6a3efc94615925535f0953842a7a15910d10c79a539b4543248b1969652d8ae9b3bd4dec8aa2ec1008908170c87f3ad70d212c4b67464767be865b3b1e0daa9d961210c7a0bb5c857ed4aac5031bbbbc96844d3d3b9d28f3e155364364657dfba3e34c1aaae14c5ee8d1d0a6611da3069a10f2e6e476cea5e28a3c1749c64b889fc314ef290509c0ca6edc76771f1312fa1c0619c69e03c5e0f6ad43b933bb696f0a704f5532f8d6e14bfb016d245fb72f296f77329aab50f38bbbe3eec850de121b092da07ed170b06f7f11d0d8495db303a627ea8df167eb1adbdd8eee02761ac432238668dd3cf42ed9646f0abf28c2e8475cfa212214d5cbd37b6d68d4125790c2963068d9b6ba3c083ad9d1a1493eef08add5c7fc777cca5df1dfec40aa7db8d744c77b9fbf2005eb47edb42e179265f5b3eb4c4a0d4793085abc6c9bdd72f4bc36a7fc1b861ef4b71acf4d5bd501bbd2a0c807a09873bb862f837db5f6e1ceaff2603da5e863c8f92ee7b77696e2e4c2b381f990c238acf69324df3344893281e77e2517a7d8ee26c4027e930cdf211ea2611fd773a7d02504b030414000008080031889645287e18aa4300000048000000120024006772617068305f656469746f722e6a736f6e0a0020000000000001001800680dbf8f001ed001680dbf8f001ed001680dbf8f001ed001ab56cac94fce4e4d51b22a292a4dd5512acec82f77ad28294a54b24a4bcc29068a94a456949416a58665166726e5a4c2d4156496e59728592939a7e695a41629d50200504b030414000008080031889645f1107aa57400000083000000090024006d6574612e6a736f6e0a0020000000000001001800b015bf8f001ed001a615bf8f001ed001a615bf8f001ed0011d8c310f82301406ffcb9bb1a1a556c2eac066dc09c333df133ad892524c0cf1bf4bdd6eb8bb9dde92561f0375d4a8b33254d194789957eaf4819bc74103e9564b8b0b1b0d6167ed09e200688618d73c6c4d6345f9b3c88d5ff22fee9ce7a70ff061527df2e8cbb5582142ae710bb968f5f8fd01504b01022d0014000008080031889645c41e1d0a230200003e0400000b00240000000000000000000000000000006772617068302e6a736f6e0a00200000000000010018006600bf8f001ed0016600bf8f001ed0016600bf8f001ed001504b01022d0014000008080031889645287e18aa43000000480000001200240000000000000000000000700200006772617068305f656469746f722e6a736f6e0a0020000000000001001800680dbf8f001ed001680dbf8f001ed001680dbf8f001ed001504b01022d0014000008080031889645f1107aa574000000830000000900240000000000000000000000070300006d6574612e6a736f6e0a0020000000000001001800b015bf8f001ed001a615bf8f001ed001a615bf8f001ed001504b050600000000030003001c010000c60300000000
     data_backup: 
     data_cachedStartup: 
     revertData: 

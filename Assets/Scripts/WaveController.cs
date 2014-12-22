@@ -19,8 +19,8 @@ public class WaveController : MonoBehaviour {
 	public Animator textAnim;
 	public string animTriggerName = "Go";
 	
-	private bool enemiesAlive = false;
-	private bool spawning = false;
+	public bool enemiesAlive = false;
+	public bool spawning = false;
 	private static float _waveCountdown = 0f;
 	public static float waveCountdown {
 		get { return _waveCountdown; }
@@ -111,7 +111,7 @@ public class WaveController : MonoBehaviour {
 		
 		waveNumber += 1;
 		
-		if (waveIndex < Waves.Length)
+		if (waveIndex < Waves.Length - 1)
 			waveIndex++;
 		else {
 			waveIndex = 0;

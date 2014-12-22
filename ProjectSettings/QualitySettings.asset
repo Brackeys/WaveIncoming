@@ -4,11 +4,11 @@
 QualitySettings:
   m_ObjectHideFlags: 0
   serializedVersion: 5
-  m_CurrentQuality: 0
+  m_CurrentQuality: 2
   m_QualitySettings:
   - serializedVersion: 2
     name: Fast
-    pixelLightCount: 4
+    pixelLightCount: 10
     shadows: 0
     shadowResolution: 0
     shadowProjection: 1

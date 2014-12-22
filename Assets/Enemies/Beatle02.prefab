@@ -172,7 +172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   updateDelay: .5
-  speed: 600
+  speed: 450
   fMode: 0
   useVelocity: 0
   nextWaypointDistance: .200000003
