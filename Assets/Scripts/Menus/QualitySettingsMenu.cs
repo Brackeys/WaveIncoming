@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class QualitySettingsManager : MonoBehaviour {
+public class QualitySettingsMenu : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
