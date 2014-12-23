@@ -26,11 +26,11 @@ public class ClassStats {
 		if (className == "Tank") {
 			name = "Tank";
 			
-			vitality = 120;
-			agility = 10;
-			acuracy = 120;
+			vitality = 110;
+			agility = 8;
+			acuracy = 90;
 			
-			weaponStat = new WeaponStats(16, 4, 3, 15, 2f);
+			weaponStat = new WeaponStats(14, 4, 3, 12, 2f);
 		}
 		
 		if (className == "Sniper") {
@@ -40,7 +40,7 @@ public class ClassStats {
 			agility = 70;
 			acuracy = 250;
 			
-			weaponStat = new WeaponStats(40, 0, 30, 4, 2f);
+			weaponStat = new WeaponStats(40, 0, 30, 6, 2f);
 		}
 	}
 }

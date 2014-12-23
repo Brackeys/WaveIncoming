@@ -5,6 +5,18 @@ using System.Collections;
 public class Customization : MonoBehaviour {
 	
 	public static bool CustomizationMenuEnabled = false;
+
+	// UPGRADE COSTS
+	
+	const int agilityCost = 65;
+	const int vitalityCost = 55;
+	const int accuracyCost = 55;
+	
+	const int damageCost = 45;
+	const int fireRateCost = 70;
+	const int critChanceCost = 60;
+	const int clipSizeCost = 30;
+	const int reloadTimeCost = 35;
 	
 	// TEXT REFERENCES
 	
@@ -43,18 +55,6 @@ public class Customization : MonoBehaviour {
 	public Button critChanceButton;
 	public Button clipSizeButton;
 	public Button reloadTimeButton;
-	
-	// UPGRADE COSTS
-	
-	int agilityCost = 130;
-	int vitalityCost = 105;
-	int accuracyCost = 100;
-	
-	int damageCost = 70;
-	int fireRateCost = 120;
-	int critChanceCost = 80;
-	int clipSizeCost = 50;
-	int reloadTimeCost = 70;
 	
 	private GameObject cv;
 	
@@ -123,7 +123,7 @@ public class Customization : MonoBehaviour {
 		fireRateButton.GetComponentInChildren<Text>().text = fireRateCost.ToString() + "$";
 		if (fireRateCost >= PlayerStats.PlayerMoney) {
 			fireRateButton.interactable = false;
-		} else
+		} else if (PlayerStats.playerFireRate != 0)
 			fireRateButton.interactable = true;
 			
 		critChanceButton.GetComponentInChildren<Text>().text = critChanceCost.ToString() + "$";

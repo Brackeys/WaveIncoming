@@ -82,7 +82,9 @@ public class Weapon : MonoBehaviour {
 	
 		if (shotsFired >= clipSize) {
 			StartCoroutine ("Reload");
+			ps.emissionRate = 0;
 			reloading = true;
+			return;
 		}
 	
 		if (fireRate == 0) {

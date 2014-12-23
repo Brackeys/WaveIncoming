@@ -53,7 +53,7 @@ public class WaveController : MonoBehaviour {
 	}
 	
 	void Update () {
-		waveCountdown -= Time.deltaTime;
+		waveCountdown -= Time.deltaTime*2f;
 		
 		if (waveCountdown == 0 && enemiesAlive == false) {
 			StartCoroutine ( SpawnWave ( Waves[waveIndex] ) );
