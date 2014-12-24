@@ -17,6 +17,12 @@ public class MainMenu : MonoBehaviour {
 	}
 
 	public void PlayGame () {
+		StartCoroutine (_PlayGame());
+	}
+	private IEnumerator _PlayGame () {
+		float waitTime = Fade.FadeInstance.BeginFade(1);
+		yield return new WaitForSeconds (waitTime);
+		
 		Application.LoadLevel (Application.loadedLevel + 1);
 	}
 	

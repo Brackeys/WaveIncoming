@@ -35,7 +35,6 @@ public class PlayerStats : MonoBehaviour {
 	}
 	
 	void Awake () {
-	Debug.Log ("TODO: Nerf money amount.");
 		ResetPlayer ();
 	}
 
