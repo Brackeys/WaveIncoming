@@ -162,8 +162,8 @@ GameObject:
   - 4: {fileID: 400004}
   - 114: {fileID: 11400020}
   - 212: {fileID: 21200000}
-  - 95: {fileID: 9500002}
   - 114: {fileID: 11400018}
+  - 95: {fileID: 9500002}
   m_Layer: 8
   m_Name: Body
   m_TagString: Untagged

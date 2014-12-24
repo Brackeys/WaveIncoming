@@ -1319,9 +1319,9 @@ GameObject:
   - 224: {fileID: 237449103}
   - 222: {fileID: 237449106}
   - 114: {fileID: 237449105}
-  - 95: {fileID: 237449104}
   - 114: {fileID: 237449107}
   - 114: {fileID: 237449108}
+  - 95: {fileID: 237449104}
   m_Layer: 5
   m_Name: UpgradeNotice
   m_TagString: Untagged
@@ -5582,8 +5582,8 @@ GameObject:
   m_Component:
   - 224: {fileID: 885910540}
   - 222: {fileID: 885910544}
-  - 95: {fileID: 885910541}
   - 114: {fileID: 885910542}
+  - 95: {fileID: 885910541}
   m_Layer: 5
   m_Name: WaveSpawned
   m_TagString: Untagged

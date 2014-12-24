@@ -1,5 +1,11 @@
-﻿using UnityEngine;
+﻿//-----------------------------------------------------------------
+// This script is not at all optimized and is very dependent on all components
+// being on the right objects... USE WITH CAUTION!
+//-----------------------------------------------------------------
+
+using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class QualitySettingsMenu : MonoBehaviour {
 
@@ -7,12 +13,16 @@ public class QualitySettingsMenu : MonoBehaviour {
 	public Transform resList;
 
 	private Resolution[] resolutions;
+	public List<Toggle> resToggles;
 	private int qualityLevel = 1;
 	private bool fullscreen = true;
 
 	// Use this for initialization
 	void Start () {
+		Screen.SetResolution ( 600, 400, false );
+
 		resolutions = Screen.resolutions;
+		resToggles = new List<Toggle>();
 
 		bool firstIteration = true;
 		foreach (Resolution res in resolutions) {
@@ -20,14 +30,17 @@ public class QualitySettingsMenu : MonoBehaviour {
 				Transform re = (Transform)Instantiate (resElement);
 				re.SetParent (resList);
 				re.GetComponentInChildren <Text>().text = res.width.ToString() + " x " + res.height.ToString();
-				re.GetComponentInChildren<Toggle>().group = resList.GetComponent<ToggleGroup>();
+				Toggle toggle = re.GetComponentInChildren<Toggle>();
+				toggle.group = resList.GetComponent<ToggleGroup>();
 			
 				if (firstIteration) {
-					re.GetComponentInChildren<Toggle>().isOn = true;
+					toggle.isOn = true;
 					firstIteration = false;
 				} else {
-					re.GetComponentInChildren<Toggle>().isOn = false;
+					toggle.isOn = false;
 				}
+
+				re.GetComponent<ResolutionElement>().res = res;
 			}
 		}
 
@@ -42,8 +55,13 @@ public class QualitySettingsMenu : MonoBehaviour {
 	}
 	
 	public void ApplySettings () {
-	
-		Screen.SetResolution ( resolutions[0].width, resolutions[0].height, fullscreen );
+
+		foreach (Transform child in resList) {
+			if (child.GetComponentInChildren<Toggle>().isOn) {
+				Resolution res = child.GetComponent<ResolutionElement>().res;
+				Screen.SetResolution ( res.width, res.height, fullscreen );
+			}
+		}
 
 		QualitySettings.SetQualityLevel (qualityLevel);
 

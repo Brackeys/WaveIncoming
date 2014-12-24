@@ -786,6 +786,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resElement: {fileID: 22460162, guid: 3c2821b573f8b428bafb2ff893d1e944, type: 2}
   resList: {fileID: 1590810343}
+  resToggles: []
 --- !u!4 &475792230
 Transform:
   m_ObjectHideFlags: 0
@@ -991,6 +992,14 @@ Prefab:
     - target: {fileID: 11428166, guid: 91116b9839fd34069a05c992cdef9fab, type: 2}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11428166, guid: 91116b9839fd34069a05c992cdef9fab, type: 2}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 475792229}
+    - target: {fileID: 11428166, guid: 91116b9839fd34069a05c992cdef9fab, type: 2}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetQualityLevel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 91116b9839fd34069a05c992cdef9fab, type: 2}
@@ -1842,6 +1851,14 @@ Prefab:
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11428166, guid: 91116b9839fd34069a05c992cdef9fab, type: 2}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 475792229}
+    - target: {fileID: 11428166, guid: 91116b9839fd34069a05c992cdef9fab, type: 2}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetQualityLevel
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 91116b9839fd34069a05c992cdef9fab, type: 2}
   m_RootGameObject: {fileID: 2061301418}
@@ -2676,7 +2693,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 475792229}
         m_MethodName: SetQualityLevel
         m_Mode: 3
         m_Arguments:
@@ -2790,7 +2807,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 475792229}
         m_MethodName: SetQualityLevel
         m_Mode: 3
         m_Arguments:
