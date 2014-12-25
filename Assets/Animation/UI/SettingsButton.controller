@@ -1,314 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!74 &7400000
-AnimationClip:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Normal
-  serializedVersion: 4
-  m_AnimationType: 2
-  m_Compressed: 0
-  m_UseHighQualityCurve: 1
-  m_RotationCurves: []
-  m_CompressedRotationCurves: []
-  m_PositionCurves: []
-  m_ScaleCurves: []
-  m_FloatCurves:
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 285
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 1
-        value: 285
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_SizeDelta.x
-    path: 
-    classID: 224
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 60
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 1
-        value: 60
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_SizeDelta.y
-    path: 
-    classID: 224
-    script: {fileID: 0}
-  m_PPtrCurves: []
-  m_SampleRate: 60
-  m_WrapMode: 0
-  m_Bounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
-  m_ClipBindingConstant:
-    genericBindings:
-    - path: 0
-      attribute: 1967290853
-      script: {fileID: 0}
-      classID: 224
-      customType: 0
-      isPPtrCurve: 0
-    - path: 0
-      attribute: 38095219
-      script: {fileID: 0}
-      classID: 224
-      customType: 0
-      isPPtrCurve: 0
-    pptrCurveMapping: []
-  m_AnimationClipSettings:
-    serializedVersion: 2
-    m_StartTime: 0
-    m_StopTime: 1
-    m_OrientationOffsetY: 0
-    m_Level: 0
-    m_CycleOffset: 0
-    m_LoopTime: 1
-    m_LoopBlend: 0
-    m_LoopBlendOrientation: 0
-    m_LoopBlendPositionY: 0
-    m_LoopBlendPositionXZ: 0
-    m_KeepOriginalOrientation: 0
-    m_KeepOriginalPositionY: 1
-    m_KeepOriginalPositionXZ: 0
-    m_HeightFromFeet: 0
-    m_Mirror: 0
-  m_EditorCurves:
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 285
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 1
-        value: 285
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_SizeDelta.x
-    path: 
-    classID: 224
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 60
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 1
-        value: 60
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_SizeDelta.y
-    path: 
-    classID: 224
-    script: {fileID: 0}
-  m_EulerEditorCurves: []
-  m_Events: []
---- !u!74 &7400002
-AnimationClip:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Highlighted
-  serializedVersion: 4
-  m_AnimationType: 2
-  m_Compressed: 0
-  m_UseHighQualityCurve: 1
-  m_RotationCurves: []
-  m_CompressedRotationCurves: []
-  m_PositionCurves: []
-  m_ScaleCurves: []
-  m_FloatCurves:
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 300
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: .5
-        value: 300
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_SizeDelta.x
-    path: 
-    classID: 224
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 65
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-      - time: .5
-        value: 65
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_SizeDelta.y
-    path: 
-    classID: 224
-    script: {fileID: 0}
-  m_PPtrCurves: []
-  m_SampleRate: 60
-  m_WrapMode: 0
-  m_Bounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
-  m_ClipBindingConstant:
-    genericBindings:
-    - path: 0
-      attribute: 1967290853
-      script: {fileID: 0}
-      classID: 224
-      customType: 0
-      isPPtrCurve: 0
-    - path: 0
-      attribute: 38095219
-      script: {fileID: 0}
-      classID: 224
-      customType: 0
-      isPPtrCurve: 0
-    pptrCurveMapping: []
-  m_AnimationClipSettings:
-    serializedVersion: 2
-    m_StartTime: 0
-    m_StopTime: .5
-    m_OrientationOffsetY: 0
-    m_Level: 0
-    m_CycleOffset: 0
-    m_LoopTime: 1
-    m_LoopBlend: 0
-    m_LoopBlendOrientation: 0
-    m_LoopBlendPositionY: 0
-    m_LoopBlendPositionXZ: 0
-    m_KeepOriginalOrientation: 0
-    m_KeepOriginalPositionY: 1
-    m_KeepOriginalPositionXZ: 0
-    m_HeightFromFeet: 0
-    m_Mirror: 0
-  m_EditorCurves:
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 300
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: .5
-        value: 300
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_SizeDelta.x
-    path: 
-    classID: 224
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 65
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-      - time: .5
-        value: 65
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_SizeDelta.y
-    path: 
-    classID: 224
-    script: {fileID: 0}
-  m_EulerEditorCurves: []
-  m_Events: []
---- !u!74 &7400004
-AnimationClip:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Pressed
-  serializedVersion: 4
-  m_AnimationType: 2
-  m_Compressed: 0
-  m_UseHighQualityCurve: 1
-  m_RotationCurves: []
-  m_CompressedRotationCurves: []
-  m_PositionCurves: []
-  m_ScaleCurves: []
-  m_FloatCurves: []
-  m_PPtrCurves: []
-  m_SampleRate: 60
-  m_WrapMode: 0
-  m_Bounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
-  m_ClipBindingConstant:
-    genericBindings: []
-    pptrCurveMapping: []
-  m_AnimationClipSettings:
-    serializedVersion: 2
-    m_StartTime: 0
-    m_StopTime: 1
-    m_OrientationOffsetY: 0
-    m_Level: 0
-    m_CycleOffset: 0
-    m_LoopTime: 1
-    m_LoopBlend: 0
-    m_LoopBlendOrientation: 0
-    m_LoopBlendPositionY: 0
-    m_LoopBlendPositionXZ: 0
-    m_KeepOriginalOrientation: 0
-    m_KeepOriginalPositionY: 1
-    m_KeepOriginalPositionXZ: 0
-    m_HeightFromFeet: 0
-    m_Mirror: 0
-  m_EditorCurves: []
-  m_EulerEditorCurves: []
-  m_Events: []
---- !u!74 &7400006
+--- !u!74 &7430820
 AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -352,12 +44,320 @@ AnimationClip:
   m_EditorCurves: []
   m_EulerEditorCurves: []
   m_Events: []
+--- !u!74 &7430822
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Pressed
+  serializedVersion: 4
+  m_AnimationType: 2
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves: []
+  m_CompressedRotationCurves: []
+  m_PositionCurves: []
+  m_ScaleCurves: []
+  m_FloatCurves: []
+  m_PPtrCurves: []
+  m_SampleRate: 60
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings: []
+    pptrCurveMapping: []
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_StartTime: 0
+    m_StopTime: 1
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_LoopTime: 1
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves: []
+  m_EulerEditorCurves: []
+  m_Events: []
+--- !u!74 &7430824
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Highlighted
+  serializedVersion: 4
+  m_AnimationType: 2
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves: []
+  m_CompressedRotationCurves: []
+  m_PositionCurves: []
+  m_ScaleCurves: []
+  m_FloatCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 109.300003
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1
+        value: 109.300003
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_SizeDelta.x
+    path: 
+    classID: 224
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 23.7999992
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1
+        value: 23.7999992
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_SizeDelta.y
+    path: 
+    classID: 224
+    script: {fileID: 0}
+  m_PPtrCurves: []
+  m_SampleRate: 60
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings:
+    - path: 0
+      attribute: 1967290853
+      script: {fileID: 0}
+      classID: 224
+      customType: 0
+      isPPtrCurve: 0
+    - path: 0
+      attribute: 38095219
+      script: {fileID: 0}
+      classID: 224
+      customType: 0
+      isPPtrCurve: 0
+    pptrCurveMapping: []
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_StartTime: 0
+    m_StopTime: 1
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_LoopTime: 1
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 109.300003
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1
+        value: 109.300003
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_SizeDelta.x
+    path: 
+    classID: 224
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 23.7999992
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1
+        value: 23.7999992
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_SizeDelta.y
+    path: 
+    classID: 224
+    script: {fileID: 0}
+  m_EulerEditorCurves: []
+  m_Events: []
+--- !u!74 &7430826
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Normal
+  serializedVersion: 4
+  m_AnimationType: 2
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves: []
+  m_CompressedRotationCurves: []
+  m_PositionCurves: []
+  m_ScaleCurves: []
+  m_FloatCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_AnchoredPosition.x
+    path: 
+    classID: 224
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 20.8999996
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1
+        value: 20.8999996
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_AnchoredPosition.y
+    path: 
+    classID: 224
+    script: {fileID: 0}
+  m_PPtrCurves: []
+  m_SampleRate: 60
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings:
+    - path: 0
+      attribute: 1460864421
+      script: {fileID: 0}
+      classID: 224
+      customType: 0
+      isPPtrCurve: 0
+    - path: 0
+      attribute: 538195251
+      script: {fileID: 0}
+      classID: 224
+      customType: 0
+      isPPtrCurve: 0
+    pptrCurveMapping: []
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_StartTime: 0
+    m_StopTime: 1
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_LoopTime: 1
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_AnchoredPosition.x
+    path: 
+    classID: 224
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 20.8999996
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1
+        value: 20.8999996
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_AnchoredPosition.y
+    path: 
+    classID: 224
+    script: {fileID: 0}
+  m_EulerEditorCurves: []
+  m_Events: []
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: PlayButton
+  m_Name: SettingsButton
   serializedVersion: 2
   m_AnimatorParameters:
   - m_Name: Normal
@@ -387,7 +387,7 @@ AnimatorController:
   m_AnimatorLayers:
   - serializedVersion: 3
     m_Name: Base Layer
-    m_StateMachine: {fileID: 110700000}
+    m_StateMachine: {fileID: 110730826}
     m_Mask: {fileID: 0}
     m_BlendingMode: 0
     m_SyncedLayerIndex: -1
@@ -396,7 +396,7 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
---- !u!1101 &110100000
+--- !u!1101 &110130820
 Transition:
   serializedVersion: 2
   m_ObjectHideFlags: 3
@@ -404,47 +404,7 @@ Transition:
   m_PrefabInternal: {fileID: 0}
   m_Name: 
   m_SrcState: {fileID: 0}
-  m_DstState: {fileID: 110200000}
-  m_TransitionDuration: .100000001
-  m_TransitionOffset: 0
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Normal
-    m_EventTreshold: 0
-    m_ExitTime: .899999976
-  m_Atomic: 1
-  m_Solo: 0
-  m_Mute: 0
-  m_CanTransitionToSelf: 0
---- !u!1101 &110131174
-Transition:
-  serializedVersion: 2
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  m_SrcState: {fileID: 0}
-  m_DstState: {fileID: 110231174}
-  m_TransitionDuration: .100000001
-  m_TransitionOffset: 0
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Pressed
-    m_EventTreshold: 0
-    m_ExitTime: .899999976
-  m_Atomic: 1
-  m_Solo: 0
-  m_Mute: 0
-  m_CanTransitionToSelf: 0
---- !u!1101 &110134436
-Transition:
-  serializedVersion: 2
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  m_SrcState: {fileID: 0}
-  m_DstState: {fileID: 110234436}
+  m_DstState: {fileID: 110230820}
   m_TransitionDuration: .100000001
   m_TransitionOffset: 0
   m_Conditions:
@@ -456,7 +416,7 @@ Transition:
   m_Solo: 0
   m_Mute: 0
   m_CanTransitionToSelf: 0
---- !u!1101 &110198362
+--- !u!1101 &110130822
 Transition:
   serializedVersion: 2
   m_ObjectHideFlags: 3
@@ -464,8 +424,28 @@ Transition:
   m_PrefabInternal: {fileID: 0}
   m_Name: 
   m_SrcState: {fileID: 0}
-  m_DstState: {fileID: 110298362}
-  m_TransitionDuration: .024338603
+  m_DstState: {fileID: 110230822}
+  m_TransitionDuration: .100000001
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: Pressed
+    m_EventTreshold: 0
+    m_ExitTime: .899999976
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
+--- !u!1101 &110130824
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 0}
+  m_DstState: {fileID: 110230824}
+  m_TransitionDuration: .100000001
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 1
@@ -476,37 +456,27 @@ Transition:
   m_Solo: 0
   m_Mute: 0
   m_CanTransitionToSelf: 0
---- !u!1102 &110200000
-State:
+--- !u!1101 &110130826
+Transition:
+  serializedVersion: 2
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Normal
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Motions:
-  - {fileID: 7400000}
-  m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: 336, y: -12, z: 0}
-  m_IKOnFeet: 0
-  m_Mirror: 0
-  m_Tag: 
---- !u!1102 &110231174
-State:
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Pressed
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Motions:
-  - {fileID: 7400004}
-  m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: 270, y: 130, z: 0}
-  m_IKOnFeet: 0
-  m_Mirror: 0
-  m_Tag: 
---- !u!1102 &110234436
+  m_Name: 
+  m_SrcState: {fileID: 0}
+  m_DstState: {fileID: 110230826}
+  m_TransitionDuration: .100000001
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: Normal
+    m_EventTreshold: 0
+    m_ExitTime: .899999976
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
+--- !u!1102 &110230820
 State:
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
@@ -515,13 +485,28 @@ State:
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
-  - {fileID: 7400006}
-  m_ParentStateMachine: {fileID: 110700000}
+  - {fileID: 7430820}
+  m_ParentStateMachine: {fileID: 110730826}
   m_Position: {x: 305, y: 195, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
---- !u!1102 &110298362
+--- !u!1102 &110230822
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Pressed
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7430822}
+  m_ParentStateMachine: {fileID: 110730826}
+  m_Position: {x: 270, y: 130, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110230824
 State:
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
@@ -530,47 +515,62 @@ State:
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
-  - {fileID: 7400002}
-  m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: 348, y: 60, z: 0}
+  - {fileID: 7430824}
+  m_ParentStateMachine: {fileID: 110730826}
+  m_Position: {x: 235, y: 65, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
---- !u!1107 &110700000
+--- !u!1102 &110230826
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Normal
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7430826}
+  m_ParentStateMachine: {fileID: 110730826}
+  m_Position: {x: 200, y: 0, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1107 &110730826
 StateMachine:
   serializedVersion: 2
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Base Layer
-  m_DefaultState: {fileID: 110200000}
+  m_DefaultState: {fileID: 110230826}
   m_States:
-  - {fileID: 110200000}
-  - {fileID: 110298362}
-  - {fileID: 110231174}
-  - {fileID: 110234436}
+  - {fileID: 110230826}
+  - {fileID: 110230824}
+  - {fileID: 110230822}
+  - {fileID: 110230820}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
+      first: {fileID: 110230820}
+      second: []
+    data:
+      first: {fileID: 110230822}
+      second: []
+    data:
+      first: {fileID: 110230824}
+      second: []
+    data:
+      first: {fileID: 110230826}
+      second: []
+    data:
       first: {fileID: 0}
       second:
-      - {fileID: 110100000}
-      - {fileID: 110198362}
-      - {fileID: 110131174}
-      - {fileID: 110134436}
-    data:
-      first: {fileID: 110200000}
-      second: []
-    data:
-      first: {fileID: 110298362}
-      second: []
-    data:
-      first: {fileID: 110231174}
-      second: []
-    data:
-      first: {fileID: 110234436}
-      second: []
+      - {fileID: 110130826}
+      - {fileID: 110130824}
+      - {fileID: 110130822}
+      - {fileID: 110130820}
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: 50, y: 20, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}

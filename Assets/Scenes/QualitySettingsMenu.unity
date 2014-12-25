@@ -1001,6 +1001,10 @@ Prefab:
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SetQualityLevel
       objectReference: {fileID: 0}
+    - target: {fileID: 11428166, guid: 91116b9839fd34069a05c992cdef9fab, type: 2}
+      propertyPath: m_IsOn
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 91116b9839fd34069a05c992cdef9fab, type: 2}
   m_RootGameObject: {fileID: 2035769858}
@@ -1659,7 +1663,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 416795348}
   m_HandleRect: {fileID: 416795347}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1845,7 +1849,7 @@ Prefab:
       objectReference: {fileID: 253846081}
     - target: {fileID: 11428166, guid: 91116b9839fd34069a05c992cdef9fab, type: 2}
       propertyPath: m_IsOn
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11428166, guid: 91116b9839fd34069a05c992cdef9fab, type: 2}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
@@ -2707,7 +2711,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  m_IsOn: 0
+  m_IsOn: 1
 --- !u!1 &2061301418
 GameObject:
   m_ObjectHideFlags: 0
@@ -2821,7 +2825,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!1 &2086748830
 GameObject:
   m_ObjectHideFlags: 0
