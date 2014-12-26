@@ -1,7 +1,5 @@
 ##TODO List
-=======================
 (The following list is in no particular order.)
-
 
 - Add AudioManager script
 - Add music
