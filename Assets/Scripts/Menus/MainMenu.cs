@@ -26,11 +26,15 @@ public class MainMenu : MonoBehaviour {
 		Application.LoadLevel (Application.loadedLevel + 1);
 	}
 
+	public void QuitGame () {
+		Application.Quit();
+	}
+
 	public void LoadQualitySettingsMenu () {
 		PlayerPrefs.SetInt ("firstLoad", 1);
 		Application.LoadLevel ("QualitySettingsMenu");
 	}
-	
+
 	public void SelectClass (string cName) {
 		PlayerStats.SelectedClass = cName;
 		
