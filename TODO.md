@@ -3,7 +3,8 @@
 
 - Add AudioManager script
 - Add music
-- Balancing
+- Stat balancing
 - Add sounds for: Death, shooting, reloading, enemy hit, upgrades, wave incoming.
+- Add powerups
 
 Release? Soon, hopefully :)
